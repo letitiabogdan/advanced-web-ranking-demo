@@ -8,9 +8,10 @@
 
 // 2. Vendors
 @import
+ "../../node_modules/bootstrap/scss/bootstrap",
   'vendors/normalize';
 
-// 3. Base stuff
+// 3. Base stuff 
 @import
   'base/base',
   'base/fonts',
