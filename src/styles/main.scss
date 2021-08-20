@@ -25,11 +25,12 @@
 
 // 5. Components
 @import
-  'components/button';
+  'components/button',
+  'components/progress';
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/demo';
 
 // 7. Themes
 @import

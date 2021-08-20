@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the demo page.
+// -----------------------------------------------------------------------------
+
+.awr-demo-page {
+    header {        
+        h1 {
+           text-align: center;            
+        }
+    }
+
+    main {
+        .awr-used-resources {
+            padding-bottom: 1.25rem;
+
+            .progress {
+                margin-bottom: 1.25rem;
+            }
+            .awr-resources-details {
+                text-align: center;
+                font-weight: 400;
+                p {
+                    font-size: 1.125rem;
+                    margin-bottom: 0;                    
+                }
+            }
+        }
+    }
+
+    footer {
+
+    }
+
+    svg {
+        @include svg-icon(20px, 20px, $danger);
+      }
+}

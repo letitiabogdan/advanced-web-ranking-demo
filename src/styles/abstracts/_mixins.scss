@@ -32,3 +32,9 @@
   }
 }
 
+@mixin svg-icon($width, $height, $fill) {
+  width: $width;
+  height: $height;
+  fill: $fill;
+}
+

@@ -25,11 +25,15 @@ html {
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: $main-blue;
   text-decoration: none;
 
   @include on-event {
-    color: $text-color;
+    color: $primary;
     text-decoration: underline;
   }
+}
+
+header {
+  margin: 1.25rem auto;
 }

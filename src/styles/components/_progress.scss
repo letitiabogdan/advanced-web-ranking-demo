@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the progress component.
+// -----------------------------------------------------------------------------
+
+.progress {
+    background-color: $light-blue;
+    border-radius: $border-radius;
+    height: 0.75rem;
+
+    .progress-bar {
+        background-color: $main-blue;
+    }
+}

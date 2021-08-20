@@ -3,5 +3,13 @@
  */
 body {
   color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  font-family: $font-family-sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  padding: 1.25rem 0;
 }
