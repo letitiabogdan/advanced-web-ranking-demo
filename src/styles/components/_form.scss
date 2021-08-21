@@ -1,0 +1,39 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the form component.
+// -----------------------------------------------------------------------------
+@use "sass:color";
+
+form {
+    .form-label {
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
+    .form-control {
+        margin-bottom: 1.25rem;
+        background-color: color.scale($light-grey, $lightness: 90%);
+    }
+
+    .form-select {
+        background-color: color.scale($light-grey, $lightness: 90%);
+    }
+
+    svg {
+        @include svg-icon(24px, 24px, $main-blue);
+    }
+
+    .awr-important {
+        input {
+            border: 1px solid $important;
+        }
+
+        svg {
+            fill: $important;
+        }
+    }
+
+    .btn-group label {
+        font-weight: 500;
+        color: $grey;        
+    }
+}

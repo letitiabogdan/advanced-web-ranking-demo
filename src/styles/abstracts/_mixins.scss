@@ -11,13 +11,15 @@
     &,
     &:hover,
     &:active,
-    &:focus {
+    &:focus,
+    &.active {
       @content;
     }
   } @else {
     &:hover,
     &:active,
-    &:focus {
+    &:focus, 
+    &.active {
       @content;
     }
   }
@@ -37,4 +39,12 @@
   height: $height;
   fill: $fill;
 }
+
+@mixin transitions($property, $duration, $animation) {
+  -webkit-transition: $property $duration $animation;
+     -moz-transition: $property $duration $animation;
+       -o-transition: $property $duration $animation;
+          transition: $property $duration $animation;
+}
+
 

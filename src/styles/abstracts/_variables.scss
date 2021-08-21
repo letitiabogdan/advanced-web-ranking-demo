@@ -8,18 +8,53 @@
 $font-family-sans-serif: "Segoe UI", "Roboto","Helvetica Neue", "Arial", sans-serif !default;
 
 // Color system
-$text-color:            #212529;
-$primary :                $text-color;
-$main-blue:              #009EF7;
-$light-blue:             #F1FAFF;
-$danger:                 #F60F0F;
-$succes:                 #50CD89;
+$text-color:                      #212529;
+$secondary:                       #9FA1A3;
+$main-blue:                       #009EF7;
+$light-blue:                      #F1FAFF;
+$hovered-blue:                    #0093E6;
+$danger:                          #F60F0F;
+$succes:                          #50CD89;
+$grey:                            #707070;
+$light-grey:                      #CECFD0;
 
-$border-radius:            8px;
+$primary :                          $text-color;
+$important:                         $danger;
+
+// Border radius
+$border-radius:                     8px;
+
+// Gutter width for the grid system
+$grid-gutter-width:                 1.25rem;
+
+// Form elements properties
+$component-active-bg:               $grey;
+$component-active-bg-secondary:     $main-blue;
+
+$input-border-width:                0;
+$input-focus-width:                 .25rem;
+$input-focus-color-opacity:         .10;
+$input-focus-color:                 rgba($component-active-bg, $input-focus-color-opacity);
+$input-focus-blur:                  0;
+$input-focus-box-shadow:            0 0 $input-focus-blur $input-focus-width $input-focus-color;
+$input-padding-y:                   .625rem;
+
+$form-select-indicator-color:       $grey;
+$form-select-focus-box-shadow:      $input-focus-box-shadow;
+$form-select-color:                 $text-color;
+$form-select-padding-y:             $input-padding-y;
+
+$input-btn-focus-blur:              $input-focus-blur;
+$input-btn-focus-width:             $input-focus-width;
+$input-btn-padding-y:               $input-padding-y;
+$input-btn-focus-color:             rgba($component-active-bg-secondary, $input-focus-color-opacity);
+$input-btn-focus-box-shadow:        0 0 $input-btn-focus-blur $input-btn-focus-width $input-btn-focus-color !important;
+
+
 
 // Tabs
-$nav-link-padding-y:                .5rem;
-$nav-link-padding-x:                1rem;
+$nav-link-padding-y:                0;
+$nav-link-padding-x:                0;
 // $nav-link-font-size:                null;
 // $nav-link-font-weight:              null;
 // $nav-link-color:                    $link-color;

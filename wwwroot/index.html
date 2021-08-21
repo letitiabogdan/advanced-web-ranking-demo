@@ -34,44 +34,193 @@
                 </div>
             </div>
 
-            <div class="awr-tabs-container d-flex align-items-start">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs flex-column me-3" id="addProject" role="tablist" aria-orientation="vertical">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="project-details-tab" data-toggle="tab" href="#project-details" role="tab"
-                            aria-controls="project-details" aria-selected="true">Project Details</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="keywords-tab" data-toggle="tab" href="#keywords" role="tab"
-                            aria-controls="keywords" aria-selected="false">Keywords</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="location-search-engines-tab" data-toggle="tab" href="#location-search-engines" role="tab"
-                            aria-controls="location-search-engines" aria-selected="false">Location and Search Engines</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="competitors-tab" data-toggle="tab" href="#competitors" role="tab"
-                            aria-controls="competitors" aria-selected="false">Competitors</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="completed-tab" data-toggle="tab" href="#completed" role="tab"
-                            aria-controls="completed" aria-selected="false">Completed</a>
-                    </li>
-                </ul>
+            <form>
+                <div class="awr-tabs-container d-flex align-items-start row gx-0">
+                    
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs flex-column col-4" id="addProject" role="tablist" aria-orientation="vertical">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="project-details-tab" data-toggle="tab" href="#project-details" role="tab"
+                                aria-controls="project-details" aria-selected="true">
+                                <div class="awr-wizard-step d-flex">
+                                    <div class="awr-step-number">1</div>
+                                    <div class="awr-step-line first"></div>
+                                    <div class="awr-step-meta">
+                                        <div class="awr-step-title">Project Details</div>
+                                        <div class="awr-step-description">Setup your project details</div>
+                                    </div>
+                                </div>                            
+                            </a>
+                        </li>
 
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="project-details" role="tabpanel" aria-labelledby="project-details-tab">project details</div>
-                    <div class="tab-pane fade" id="keywords" role="tabpanel" aria-labelledby="keywords-tab">keywords</div>
-                    <div class="tab-pane fade" id="location-search-engines" role="tabpanel" aria-labelledby="location-search-engines-tab">location search engines tab</div>
-                    <div class="tab-pane fade" id="competitors" role="tabpanel" aria-labelledby="competitors-tab">competitors</div>
-                    <div class="tab-pane fade" id="completed" role="tabpanel" aria-labelledby="completed-tab">completed</div>
+                        <li class="nav-item">
+                            <a class="nav-link completed" id="keywords-tab" data-toggle="tab" href="#keywords" role="tab"
+                                aria-controls="keywords" aria-selected="false">
+                                <div class="awr-wizard-step d-flex">
+                                    <div class="awr-step-number">
+                                        <svg>
+                                            <use href="images/icons.svg#awr-completed-icon" />               
+                                        </svg>
+                                    </div>                                
+                                    <div class="awr-step-line"></div>
+                                    <div class="awr-step-meta">
+                                        <div class="awr-step-title">Keywords</div>
+                                        <div class="awr-step-description">List of keywords you want to track</div>
+                                    </div>
+                                </div>                            
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" id="location-search-engines-tab" data-toggle="tab" href="#location-search-engines" role="tab"
+                                aria-controls="location-search-engines" aria-selected="false">                            
+                                <div class="awr-wizard-step d-flex">
+                                    <div class="awr-step-number">3</div>
+                                    <div class="awr-step-line"></div>
+                                    <div class="awr-step-meta">
+                                        <div class="awr-step-title">Location and Search Engines</div>
+                                        <div class="awr-step-description">Search in location, Mobile, Video and more</div>
+                                    </div>
+                                </div> 
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" id="competitors-tab" data-toggle="tab" href="#competitors" role="tab"
+                                aria-controls="competitors" aria-selected="false">
+                                <div class="awr-wizard-step d-flex">
+                                    <div class="awr-step-number">4</div>
+                                    <div class="awr-step-line"></div>
+                                    <div class="awr-step-meta">
+                                        <div class="awr-step-title">Competitors</div>
+                                        <div class="awr-step-description">Optional list of competing websites</div>
+                                    </div>
+                                </div>                             
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" id="completed-tab" data-toggle="tab" href="#completed" role="tab"
+                                aria-controls="completed" aria-selected="false">
+                                <div class="awr-wizard-step d-flex">
+                                    <div class="awr-step-number">5</div>
+                                    <div class="awr-step-line last"></div>
+                                    <div class="awr-step-meta">
+                                        <div class="awr-step-title">Completed</div>
+                                        <div class="awr-step-description">Congrats!</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content col-8">
+                        <div class="tab-pane fade show active" id="project-details" role="tabpanel" aria-labelledby="project-details-tab">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="projectName" class="form-label">Project name</label>
+                                    <input type="text" class="form-control" id="projectName" placeholder="Project name">
+                                </div>
+
+                                <div class="col-12 awr-important">
+                                    <label for="url" class="form-label">URL
+                                        <svg>
+                                            <use href="images/icons.svg#awr-info-icon" />               
+                                        </svg>
+                                    </label>
+                                    <input type="text" class="form-control" id="url" placeholder="URL">
+                                </div>
+
+                                <div class="col-6 pb-3">
+                                    <label for="country" class="form-label">Country</label>
+                                    <select id="country" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>Romania</option>
+                                        <option>Italy</option>
+                                        <option>Spain</option>
+                                        <option>UK</option>
+                                      </select>
+                                    <span class="text-muted">
+                                        *Change country to get even more accurate results for your project
+                                    </span>
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="resultsPage" class="form-label w-100">Results page depth</label>
+                                    <div class="btn-group row w-100" role="group" aria-label="Results page depth">
+                                        <div class="col">
+                                            <input type="radio" class="btn-check" name="btnradio1" id="btnradio1_1" autocomplete="off" checked>
+                                            <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio1_1">5 pages</label>
+                                        </div>
+                                        
+                                        <div class="col">
+                                            <input type="radio" class="btn-check" name="btnradio1" id="btnradio1_2" autocomplete="off">
+                                            <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio1_2">10 pages</label>                                                
+                                        </div>
+                                    </div>                                    
+                                </div>
+
+                                <div class="col-12 pb-5">
+                                    <label for="updateFrequency" class="form-label w-100">
+                                        Update frequency
+                                        <svg>
+                                            <use href="images/icons.svg#awr-info-icon" />               
+                                        </svg>
+                                    </label>
+                                    <div class="btn-group row w-100" role="group" aria-label="Update frequency">
+                                        <div class="col">
+                                            <input type="radio" class="btn-check" name="btnradio2" id="btnradio2_1" autocomplete="off" checked>
+                                            <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio2_1">daily</label>
+                                        </div>
+                                        
+                                        <div class="col">
+                                            <input type="radio" class="btn-check" name="btnradio2" id="btnradio2_2" autocomplete="off">
+                                            <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio2_2">weekly</label>                                                
+                                        </div>
+
+                                        <div class="col">
+                                            <input type="radio" class="btn-check" name="btnradio2" id="btnradio2_3" autocomplete="off">
+                                            <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio2_3">biweekly</label>                                                
+                                        </div>
+
+                                        <div class="col">
+                                            <input type="radio" class="btn-check" name="btnradio2" id="btnradio2_4" autocomplete="off">
+                                            <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio2_4">monthly</label>                                                
+                                        </div>
+
+                                        <div class="col">
+                                            <input type="radio" class="btn-check" name="btnradio2" id="btnradio2_5" autocomplete="off">
+                                            <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio2_5">paused</label>                                                
+                                        </div>
+
+                                    </div>                                    
+                                </div>
+
+                                <div class="col-12 awr-wizard-actions">
+                                    <button type="button" class="btn btn-primary float-end">
+                                        Keywords
+                                        <svg>
+                                            <use href="images/icons.svg#awr-next-icon" />               
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div>                            
+                        
+                        </div>
+
+                        <div class="tab-pane fade" id="keywords" role="tabpanel" aria-labelledby="keywords-tab">keywords</div>
+                        <div class="tab-pane fade" id="location-search-engines" role="tabpanel" aria-labelledby="location-search-engines-tab">location search engines tab</div>
+                        <div class="tab-pane fade" id="competitors" role="tabpanel" aria-labelledby="competitors-tab">competitors</div>
+                        <div class="tab-pane fade" id="completed" role="tabpanel" aria-labelledby="completed-tab">completed</div>
+                    </div>
                 </div>
-            </div>
+            </form>
         </main>
 
         <footer class="pt-5 my-5 text-muted border-top">
-            Created by the Bootstrap team · © 2021
+            Created by <a href="www.linkedin.com/in/letitiagidea">Letitia Bogdan</a> for Caphyon as a demo test © 2021
         </footer>
     </div>
     <script src="js/jquery/jquery.min.js"></script>

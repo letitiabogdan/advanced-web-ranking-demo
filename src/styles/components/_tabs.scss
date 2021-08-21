@@ -1,8 +1,9 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
+// This file contains all styles related to the tabs component.
 // -----------------------------------------------------------------------------
-.awr-demo-page {
-    footer {
-        text-align: center;
+
+.nav-tabs {
+    .nav-link {
+        text-decoration: none;
     }
 }

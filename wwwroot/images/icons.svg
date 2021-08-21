@@ -1,11 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg"  style="display: none">
 
-  <symbol id="awr-info-icon" viewBox="0 0 20 20">
-    <path id="Path_423" data-name="Path 423" d="M0,0H20V20H0Z" fill="none"/>
-    <path id="Path_424" data-name="Path 424" d="M9.2,6h1.6V7.6H9.2Zm0,3.2h1.6V14H9.2ZM10,2a8,8,0,1,0,8,8A8,8,0,0,0,10,2Zm0,14.4A6.4,6.4,0,1,1,16.4,10,6.408,6.408,0,0,1,10,16.4Z" />
+  <symbol id="awr-info-icon" viewBox="0 0 24 24">
+    <path d="M0,0H20V20H0Z" fill="none"/>
+    <path d="M9.2,6h1.6V7.6H9.2Zm0,3.2h1.6V14H9.2ZM10,2a8,8,0,1,0,8,8A8,8,0,0,0,10,2Zm0,14.4A6.4,6.4,0,1,1,16.4,10,6.408,6.408,0,0,1,10,16.4Z" />
   </symbol>
 
-  <symbol id="awr-***-icon" viewBox="0 0 20">
+  <symbol id="awr-completed-icon" viewBox="0 0 24 24">
+    <path d="M0,0H24V24H0Z" fill="none"/>
+    <path d="M9,16.2,4.8,12,3.4,13.4,9,19,21,7,19.6,5.6Z"/>
+  </symbol>
+
+  <symbol id="awr-next-icon" viewBox="0 0 11.785 9.771">
+    <g transform="translate(-99.5 -18.614)">
+      <line x2="8" transform="translate(99.5 23.5)" fill="none" stroke="#98d7fb" stroke-width="1"/>
+      <path  d="M5.37,5.369l-4.2,4.2A.684.684,0,0,1,.2,8.6L3.918,4.886.2,1.168A.684.684,0,0,1,1.168.2l4.2,4.2a.684.684,0,0,1,0,.967Z" transform="translate(105.715 18.614)" fill="#fff"/>
+    </g>
+  </symbol>
+
+  <symbol id="awr-***-icon" viewBox="0 0 24 24">
    
   </symbol>
   

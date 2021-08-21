@@ -3,12 +3,6 @@
 // -----------------------------------------------------------------------------
 
 .awr-demo-page {
-    header {        
-        h1 {
-           text-align: center;            
-        }
-    }
-
     main {
         .awr-used-resources {
             padding-bottom: 1.25rem;
@@ -25,13 +19,90 @@
                 }
             }
         }
+
+        .awr-tabs-container {
+            .nav-item .nav-link {                
+                &.active {
+                    .awr-step-number { 
+                        color: $white;
+                        background-color: $main-blue;
+                    }
+                }
+
+                &.completed {
+                    .awr-step-number svg { 
+                        @include svg-icon(24px, 24px, $main-blue);
+                    }
+
+                    .awr-step-title {
+                        color: $grey;
+                    }
+                }
+            }
+
+            .awr-wizard-step {
+                align-items: center;
+                position: relative;
+                padding-bottom: 2.5rem;
+                
+                
+                .awr-step-number {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    text-align: center;
+                    background-color: $light-blue;
+                    border-radius: $border-radius;
+                    color: $main-blue;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin-right: 1.25rem;
+                    z-index: 100;
+                    @include transitions(all, .5s, ease-in-out);                   
+                }
+
+                .awr-step-line {
+                    display: block;
+                    content: " ";
+                    justify-content: center;
+                    position: absolute;
+                    z-index: 0;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 40px;
+                    transform: translate(50%);
+                    border-left-width: 1px;
+                    border-left-style: dashed;
+                    border-left-color: $light-grey;
+                    &.first {
+                        top: 50%;
+                    } 
+                    &.last {
+                        bottom: 50%;
+                    }                   
+                }
+
+                .awr-step-meta {
+                    .awr-step-title {
+                        font-size: 1.125rem;
+                        font-weight: 500;
+                        @include transitions(all, .5s, ease-out);
+                    }
+
+                    .awr-step-description {
+                        font-size: 0.75rem;
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            
+        }
+
+        .awr-wizard-actions {
+            justify-content: space-between;
+        }
     }
-
-    footer {
-
-    }
-
-    svg {
-        @include svg-icon(20px, 20px, $danger);
-      }
 }
