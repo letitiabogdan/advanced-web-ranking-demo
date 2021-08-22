@@ -1,8 +1,8 @@
 
 (function () {
 
-    function setupTabs() {
-        var triggerTabList = [].slice.call(document.querySelectorAll('#addProject a'))
+    function setupTabs(tabsId) {
+        var triggerTabList = [].slice.call(document.querySelectorAll(tabsId + ' a'))
         triggerTabList.forEach(function (triggerEl) {
             var tabTrigger = new bootstrap.Tab(triggerEl)
 
@@ -14,7 +14,8 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-        setupTabs();
+        setupTabs("#addProject");
+        setupTabs("#deviceType");
     });
 
 })();

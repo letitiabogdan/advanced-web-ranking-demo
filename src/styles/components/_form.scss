@@ -16,14 +16,14 @@ form {
 
     .form-control {
         margin-bottom: 1.25rem;
-        background-color: color.scale($light-grey, $lightness: 90%);
+        background-color: color.scale($light-grey, $lightness: 80%);
         &:focus, &:active {
             color: $primary;
         }
     }
 
     .form-select {
-        background-color: color.scale($light-grey, $lightness: 90%);
+        background-color: color.scale($light-grey, $lightness: 80%);
     }
 
     svg {

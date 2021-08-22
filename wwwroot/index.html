@@ -33,15 +33,15 @@
                 <div class="awr-tabs-container d-flex align-items-start row gx-0">
                     
                     <!-- Nav tabs -->
-                    <ul class="nav nav-tabs flex-column col-4" id="addProject" role="tablist" aria-orientation="vertical">
+                    <ul class="nav nav-tabs flex-column col-lg-4" id="addProject" role="tablist" aria-orientation="vertical">
                         <li class="nav-item">
-                            <a class="nav-link completed" id="project-details-tab" data-toggle="tab" href="#project-details" role="tab"
-                                aria-controls="project-details" aria-selected="false">
+                            <a class="nav-link active" id="project-details-tab" data-toggle="tab" href="#project-details" role="tab"
+                                aria-controls="project-details" aria-selected="true">
                                 <div class="awr-wizard-step d-flex">
-                                    <div class="awr-step-number">
-                                        <svg>
+                                    <div class="awr-step-number">1
+                                        <!-- <svg>
                                             <use href="images/icons.svg#awr-completed-icon" />               
-                                        </svg>
+                                        </svg> -->
                                     </div>
                                     <div class="awr-step-line first"></div>
                                     <div class="awr-step-meta">
@@ -53,8 +53,8 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" id="keywords-tab" data-toggle="tab" href="#keywords" role="tab"
-                                aria-controls="keywords" aria-selected="true">
+                            <a class="nav-link disabled" id="keywords-tab" data-toggle="tab" href="#keywords" role="tab"
+                                aria-controls="keywords" aria-selected="false" tabindex="-1" aria-disabled="true">
                                 <div class="awr-wizard-step d-flex">
                                     <div class="awr-step-number">
                                         2
@@ -112,8 +112,8 @@
                     </ul>
 
                     <!-- Tab panes -->
-                    <div class="tab-content col-8">
-                        <div class="tab-pane fade" id="project-details" role="tabpanel" aria-labelledby="project-details-tab">
+                    <div class="tab-content col-lg-8">
+                        <div class="tab-pane fade show active" id="project-details" role="tabpanel" aria-labelledby="project-details-tab">
                             <div class="row">
                                 <div class="col-12">
                                     <label for="projectName" class="form-label">Project name</label>
@@ -129,7 +129,7 @@
                                     <input type="text" class="form-control" id="url" placeholder="URL">
                                 </div>
 
-                                <div class="col-6 pb-3">
+                                <div class="col-lg-6 pb-3">
                                     <label for="country" class="form-label">Country</label>
                                     <select id="country" class="form-select">
                                         <option selected>Choose...</option>
@@ -143,22 +143,22 @@
                                     </span>
                                 </div>
 
-                                <div class="col-6">
+                                <div class="col-lg-6">
                                     <label for="resultsPage" class="form-label w-100">Results page depth</label>
                                     <div class="btn-group row w-100" role="group" aria-label="Results page depth">
-                                        <div class="col">
+                                        <div class="col-auto">
                                             <input type="radio" class="btn-check" name="btnradio1" id="btnradio1_1" autocomplete="off" checked>
                                             <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio1_1">5 pages</label>
                                         </div>
                                         
-                                        <div class="col">
+                                        <div class="col-auto">
                                             <input type="radio" class="btn-check" name="btnradio1" id="btnradio1_2" autocomplete="off">
                                             <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio1_2">10 pages</label>                                                
                                         </div>
                                     </div>                                    
                                 </div>
 
-                                <div class="col-12 pb-5">
+                                <div class="col-12 pb-lg-2 pb-xl-3">
                                     <label for="updateFrequency" class="form-label w-100">
                                         Update frequency
                                         <svg>
@@ -166,27 +166,27 @@
                                         </svg>
                                     </label>
                                     <div class="btn-group row w-100" role="group" aria-label="Update frequency">
-                                        <div class="col">
+                                        <div class="col-auto">
                                             <input type="radio" class="btn-check" name="btnradio2" id="btnradio2_1" autocomplete="off" checked>
                                             <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio2_1">daily</label>
                                         </div>
                                         
-                                        <div class="col">
+                                        <div class="col-auto">
                                             <input type="radio" class="btn-check" name="btnradio2" id="btnradio2_2" autocomplete="off">
                                             <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio2_2">weekly</label>                                                
                                         </div>
 
-                                        <div class="col">
+                                        <div class="col-auto">
                                             <input type="radio" class="btn-check" name="btnradio2" id="btnradio2_3" autocomplete="off">
                                             <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio2_3">biweekly</label>                                                
                                         </div>
 
-                                        <div class="col">
+                                        <div class="col-auto">
                                             <input type="radio" class="btn-check" name="btnradio2" id="btnradio2_4" autocomplete="off">
                                             <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio2_4">monthly</label>                                                
                                         </div>
 
-                                        <div class="col">
+                                        <div class="col-auto">
                                             <input type="radio" class="btn-check" name="btnradio2" id="btnradio2_5" autocomplete="off">
                                             <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio2_5">paused</label>                                                
                                         </div>
@@ -207,7 +207,7 @@
                         
                         </div>
 
-                        <div class="tab-pane fade show active" id="keywords" role="tabpanel" aria-labelledby="keywords-tab">
+                        <div class="tab-pane fade" id="keywords" role="tabpanel" aria-labelledby="keywords-tab">
                             <div class="row">
                                 <div class="col-12">
                                     <label for="keywordsList" class="form-label mb-0">
@@ -289,7 +289,7 @@
                                                 </tbody>
                                               </table>
 
-                                              <button type="button" class="btn btn-primary awr-buy-btn">
+                                              <button type="button" class="btn btn-primary awr-add-btn">
                                                 Add suggestions to basket
                                                 <svg>
                                                     <use href="images/icons.svg#awr-cart-icon" />               
@@ -306,7 +306,7 @@
                                         <svg>
                                             <use href="images/icons.svg#awr-arrow-icon" />               
                                         </svg>
-                                        Profile details
+                                        Project details
                                     </button>
 
                                     <button type="button" class="btn btn-primary">
@@ -320,9 +320,353 @@
                             </div> 
                         </div>
 
-                        <div class="tab-pane fade" id="location-search-engines" role="tabpanel" aria-labelledby="location-search-engines-tab">location search engines tab</div>
-                        <div class="tab-pane fade" id="competitors" role="tabpanel" aria-labelledby="competitors-tab">competitors</div>
-                        <div class="tab-pane fade" id="completed" role="tabpanel" aria-labelledby="completed-tab">completed</div>
+                        <div class="tab-pane fade" id="location-search-engines" role="tabpanel" aria-labelledby="location-search-engines-tab">
+                            
+                            <div class="awr-input-chips">
+                                <label for="keywordsList" class="form-label">
+                                    Search in location, Mobile, Video and more
+                                </label>
+                                <input type="text" class="form-control" id="URLKeyword" placeholder="">
+                                <span class="badge bg-primary">
+                                    Google.com Desktop Universal
+                                    <a href="#">x</a>
+                                </span>
+                            </div>
+
+                            <div class="row gx-2">
+                                <label for="countryStep3" class="form-label col-form-label col-lg-6">Country</label>
+                                <div class="col-lg-6">
+                                    <select id="countryStep3" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>Romania</option>
+                                        <option>Italy</option>
+                                        <option>Spain</option>
+                                        <option>UK</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            
+                            <div class="row gx-2 my-3">
+                                <label for="searchEngine" class="form-label col-form-label col-lg-6">Search engine</label>
+                                <div class="col-lg-6">
+                                    <select id="searchEngine" class="form-select">
+                                        <option selected>Google</option>
+                                        <option>Bing</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="awr-horizontal-tabs-container">
+                                <ul class="nav nav-tabs" id="deviceType" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="desktop-tab" data-bs-toggle="tab" data-bs-target="#dektop" href="#dektop" role="tab" aria-controls="dektop" aria-selected="true">
+                                            <svg>
+                                                <use href="images/icons.svg#awr-desktop-icon" />               
+                                            </svg>
+                                            Desktop device
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile" href="#mobile" role="tab" aria-controls="mobile" aria-selected="false">
+                                            <svg>
+                                                <use href="images/icons.svg#awr-mobile-icon" />               
+                                            </svg>
+                                            Mobile device
+                                        </a>
+                                    </li>
+                                  </ul>
+
+                                  <div class="tab-content" id="deviceTypeContent">
+                                    <div class="tab-pane fade show active py-3" id="dektop" role="tabpanel" aria-labelledby="desktop-tab">
+                                        <div class="col-12 pb-lg-2 pb-xl-3">
+                                            <label for="searchType" class="form-label w-100">
+                                                Search type                                                
+                                            </label>
+                                            <div class="btn-group row w-100" role="group" aria-label="Search type">
+                                                <div class="col-auto">
+                                                    <input type="radio" class="btn-check" name="btnradio3" id="btnradio3_1" autocomplete="off" checked>
+                                                    <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio3_1">all</label>
+                                                </div>
+                                                
+                                                <div class="col-auto">
+                                                    <input type="radio" class="btn-check" name="btnradio3" id="btnradio3_2" autocomplete="off">
+                                                    <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio3_2">images</label>                                                
+                                                </div>
+
+                                                <div class="col-auto">
+                                                    <input type="radio" class="btn-check" name="btnradio3" id="btnradio3_3" autocomplete="off">
+                                                    <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio3_3">videos</label>                                                
+                                                </div>
+
+                                                <div class="col-auto">
+                                                    <input type="radio" class="btn-check" name="btnradio3" id="btnradio3_4" autocomplete="off">
+                                                    <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio3_4">maps</label>                                                
+                                                </div>
+
+                                                <div class="col-auto">
+                                                    <input type="radio" class="btn-check" name="btnradio3" id="btnradio3_6" autocomplete="off">
+                                                    <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio3_6">shopping</label>                                                
+                                                </div>
+
+                                                <div class="col-auto">
+                                                    <input type="radio" class="btn-check" name="btnradio3" id="btnradio3_7" autocomplete="off">
+                                                    <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio3_7">news</label>                                                
+                                                </div>
+
+                                                <div class="col-auto">
+                                                    <input type="radio" class="btn-check" name="btnradio3" id="btnradio3_8" autocomplete="off">
+                                                    <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio3_8">jobs</label>                                                
+                                                </div>
+
+                                            </div>                                    
+                                        </div>
+
+                                        <div class="col-12 pb-lg-2 pb-xl-3">
+                                            <label for="searchFeatures" class="form-label w-100">
+                                                Search features                                                
+                                            </label>
+                                            <div class="btn-group row w-100" role="group" aria-label="Search features">
+                                                <div class="col-auto">
+                                                    <input type="radio" class="btn-check" name="btnradio4" id="btnradio4_1" autocomplete="off" checked>
+                                                    <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio4_1">universal</label>
+                                                </div>
+                                                
+                                                <div class="col-auto">
+                                                    <input type="radio" class="btn-check" name="btnradio4" id="btnradio4_2" autocomplete="off">
+                                                    <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio4_2">organic</label>                                                
+                                                </div>
+                                        
+                                                <div class="col-auto">
+                                                    <input type="radio" class="btn-check" name="btnradio4" id="btnradio4_3" autocomplete="off">
+                                                    <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio4_3">organic & places</label>                                                
+                                                </div>
+                                        
+                                                <div class="col-auto">
+                                                    <input type="radio" class="btn-check" name="btnradio4" id="btnradio4_4" autocomplete="off">
+                                                    <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio4_4">places</label>                                                
+                                                </div>
+                                        
+                                                <div class="col-auto">
+                                                    <input type="radio" class="btn-check" name="btnradio4" id="btnradio4_6" autocomplete="off">
+                                                    <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio4_6">sponsored</label>                                                
+                                                </div>		
+                                        
+                                            </div>                                    
+                                        </div>
+
+                                        <div class="col-12 pb-lg-2 pb-xl-3">
+                                            <label for="location" class="form-label w-100">
+                                                Location                                                
+                                            </label>
+                                            
+                                            <div class="btn-group row w-100" role="group" aria-label="location">
+                                                <div class="col-auto">
+                                                    <input type="radio" class="btn-check" name="btnradio5" id="btnradio5_1" autocomplete="off" checked>
+                                                    <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio5_1">anywhere</label>
+                                                </div>
+                                                
+                                                <div class="col-auto">
+                                                    <input type="radio" class="btn-check" name="btnradio5" id="btnradio5_2" autocomplete="off">
+                                                    <label class="btn btn-outline btn-outline-dashed w-100" for="btnradio5_2">custom location</label>                                                
+                                                </div>			
+                                        
+                                            </div>                                    
+                                        </div>
+
+                                        <div class="col-lg-6 pb-3">
+                                            <label for="language" class="form-label">Language</label>
+                                            <select id="language" class="form-select">
+                                                <option selected>English</option>
+                                                <option>Romanian</option>
+                                                <option>English</option>
+                                                <option>Spanish</option>
+                                                <option>Italian</option>
+                                              </select>
+                                        </div>
+
+                                        <hr>
+
+                                        <div class="col-12">
+                                            <label for="keywordsList" class="form-label mb-0">
+                                                Google My Business listing
+                                                <svg>
+                                                    <use href="images/icons.svg#awr-info-icon" />               
+                                                </svg>
+                                            </label>
+                                            <span class="text-muted">
+                                                * One per row
+                                            </span>
+                                            <textarea class="form-control mt-3" id="keywordsList" rows="3"></textarea>
+                                        </div>
+
+                                        <button type="button" class="btn btn-primary awr-add-btn">
+                                            Add search engine
+                                        </button>
+
+                                        <div class="col-12 awr-wizard-actions d-flex justify-content-between mt-4">
+                                            <button type="button" class="btn btn-primary awr-previous-step-btn">
+                                                <svg>
+                                                    <use href="images/icons.svg#awr-arrow-icon" />               
+                                                </svg>
+                                                Keywords
+                                            </button>
+        
+                                            <button type="button" class="btn btn-primary">
+                                                Competitors
+                                                <svg>
+                                                    <use href="images/icons.svg#awr-arrow-icon" />               
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
+                                        Mobile content tab
+                                    </div>
+                                  </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="tab-pane fade" id="competitors" role="tabpanel" aria-labelledby="competitors-tab">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="competingList" class="form-label mb-0">
+                                        Optional list of competing websites
+                                    </label>
+                                    <span class="text-muted">
+                                        * One per row
+                                    </span>
+                                    <textarea class="form-control mt-3" id="competingList" rows="3"></textarea>
+                                </div>
+                            
+                                <div class="accordion awr-accordion" id="additionalOptionsStep3">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="additionalOptionsStep3Header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStep3" aria-expanded="true" aria-controls="collapseOne">
+                                          Show additional options
+                                        </button>
+                                      </h2>
+                            
+                                      <div id="collapseStep3" class="accordion-collapse collapse" aria-labelledby="additionalOptionsStep3Header" data-bs-parent="#additionalOptionsStep3">
+                                        <div class="accordion-body">
+                                            <div class="col-12 awr-input-chips">
+                                                <label for="URLKeywordStep3" class="form-label">
+                                                    URL/Keyword
+                                                    <svg>
+                                                        <use href="images/icons.svg#awr-info-icon" />               
+                                                    </svg>
+                                                </label>
+                                                <input type="text" class="form-control" id="URLKeywordStep3" placeholder="">
+                                                <span class="badge bg-primary">
+                                                    www.gds.ro
+                                                    <a href="#">x</a>
+                                                </span>
+                                            </div>
+                            
+                                            <table class="table table-hover">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </th>
+                                                    <th scope="col" class="d-flex align-items-center">
+                                                        <span>Competitor</span>
+                                                        <input type="text" class="form-control awr-table-input" id="CompetitorsFilter" placeholder="Filter Competitors">
+                                                    </th>
+                                                    <th scope="col">Trust Flow</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th scope="row">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </th>
+                                                    <td>adevarul.ro</td>
+                                                    <td>87</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </th>
+                                                    <td>hotnews.ro</td>
+                                                    <td>58</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </th>
+                                                    <td>realitatea.net</td>
+                                                    <td>55</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </th>
+                                                    <td>digi24.ro</td>
+                                                    <td>40</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                            
+                                                <button type="button" class="btn btn-primary awr-add-btn">
+                                                    Add suggestions to basket
+                                                    <svg>
+                                                        <use href="images/icons.svg#awr-cart-icon" />               
+                                                    </svg>
+                                                </button>
+                            
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 awr-wizard-actions d-flex justify-content-between">
+                                    <button type="button" class="btn btn-primary awr-previous-step-btn">
+                                        <svg>
+                                            <use href="images/icons.svg#awr-arrow-icon" />               
+                                        </svg>
+                                        Location & search engines
+                                    </button>
+                            
+                                    <button type="button" class="btn btn-primary">
+                                        Completed
+                                        <svg>
+                                            <use href="images/icons.svg#awr-arrow-icon" />               
+                                        </svg>
+                                    </button>
+                                </div>
+                            
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="completed" role="tabpanel" aria-labelledby="completed-tab">
+                            <div class="awr-completed-steps d-flex">
+                                <h2>Project Setup Completed</h2>
+
+                                <svg class="awr-completed align-self-center">
+                                    <use href="images/icons.svg#awr-completed-icon" />               
+                                </svg>
+
+                                <button type="button" class="btn btn-primary awr-add-btn col-md-4 mx-auto">
+                                    Add project
+                                </button>
+                            </div>
+
+                            <div class="col-12 awr-wizard-actions d-flex justify-content-between mt-3">
+                                <button type="button" class="btn btn-primary awr-previous-step-btn">
+                                    <svg>
+                                        <use href="images/icons.svg#awr-arrow-icon" />               
+                                    </svg>
+                                    Competitors
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </form>

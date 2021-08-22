@@ -23,6 +23,16 @@
     <circle cx="2" cy="2" r="2" transform="translate(10 13)" fill="#50cd89" opacity="0.5"/>
   </symbol>
 
+  <symbol id="awr-desktop-icon" viewBox="0 0 24 24">
+    <path d="M0,0H24V24H0Z" fill="none"/>
+    <path d="M21,2H3A2.006,2.006,0,0,0,1,4V16a2.006,2.006,0,0,0,2,2h7v2H8v2h8V20H14V18h7a2.006,2.006,0,0,0,2-2V4A2.006,2.006,0,0,0,21,2Zm0,14H3V4H21Z" />
+  </symbol>
+
+  <symbol id="awr-mobile-icon" viewBox="0 0 24 24">
+    <path id="Path_433" data-name="Path 433" d="M0,0H24V24H0Z" fill="none"/>
+    <path id="Path_434" data-name="Path 434" d="M17,1.01,7,1A2.006,2.006,0,0,0,5,3V21a2.006,2.006,0,0,0,2,2H17a2.006,2.006,0,0,0,2-2V3A2,2,0,0,0,17,1.01ZM17,19H7V5H17Z" />
+  </symbol>
+
   <symbol id="awr-***-icon" viewBox="0 0 24 24">
    
   </symbol>

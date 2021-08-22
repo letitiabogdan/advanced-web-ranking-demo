@@ -5,7 +5,7 @@
 
 /// Regular font family
 /// @type List
-$font-family-sans-serif: "Segoe UI", "Roboto","Helvetica Neue", "Arial", sans-serif !default;
+$font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !default;
 
 // Color system
 $text-color:                      #212529;
@@ -51,6 +51,7 @@ $form-select-indicator-color:       $grey;
 $form-select-focus-box-shadow:      $input-focus-box-shadow;
 $form-select-color:                 $text-color;
 $form-select-padding-y:             $input-padding-y;
+$form-select-font-weight:           500;
 
 $input-btn-focus-blur:              $input-focus-blur;
 $input-btn-focus-width:             $input-focus-width;
