@@ -28,9 +28,9 @@ a {
   color: $main-blue;
   text-decoration: none;
 
-  @include on-event {
-    color: $primary;
+  @include on-event {    
     text-decoration: underline;
+    color: $main-blue;
   }
 }
 

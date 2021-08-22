@@ -97,12 +97,41 @@
             }
         }
 
-        .tab-content {
-            
-        }
+        .awr-accordion {
+            margin-bottom: 1.25rem;
 
-        .awr-wizard-actions {
-            justify-content: space-between;
+            .accordion-button {
+                width: 50%;
+                border-bottom: 1px solid $primary;
+            }
+
+            .awr-input-chips {
+                position: relative;
+
+                .badge {
+                    background-color: $light-grey!important;
+                    color: $primary;
+                    font-weight: 400;
+                    position: absolute;
+                    bottom: 0.75rem;
+                    left: 1.25rem;
+
+                    a {
+                        color: $primary;
+                        
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            .awr-table-input {
+                margin-bottom: 0;
+                font-size: 0.75rem;
+                margin-left: 0.75rem;
+                width: 50%;
+            }
         }
     }
 }

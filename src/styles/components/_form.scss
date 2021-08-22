@@ -7,11 +7,19 @@ form {
     .form-label {
         font-size: 1.125rem;
         font-weight: 500;
+        display: block;
+        a {
+            font-size: 1rem;
+            float: right;
+        }
     }
 
     .form-control {
         margin-bottom: 1.25rem;
         background-color: color.scale($light-grey, $lightness: 90%);
+        &:focus, &:active {
+            color: $primary;
+        }
     }
 
     .form-select {
@@ -35,5 +43,10 @@ form {
     .btn-group label {
         font-weight: 500;
         color: $grey;        
+    }
+
+    .form-check-input:checked {
+        background: $main-blue;
+        border-color: $hovered-blue;
     }
 }

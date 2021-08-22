@@ -15,17 +15,25 @@ $light-blue:                      #F1FAFF;
 $hovered-blue:                    #0093E6;
 $danger:                          #F60F0F;
 $succes:                          #50CD89;
+$hovered-green:                   #4EC484;
 $grey:                            #707070;
 $light-grey:                      #CECFD0;
+$white:                           #ffffff;
 
 $primary :                          $text-color;
 $important:                         $danger;
+$green:                             $succes;
 
 // Border radius
 $border-radius:                     8px;
 
 // Gutter width for the grid system
 $grid-gutter-width:                 1.25rem;
+
+// Tabs
+$nav-link-padding-y:                0;
+$nav-link-padding-x:                0;
+$nav-tabs-border-width:             0;
 
 // Form elements properties
 $component-active-bg:               $grey;
@@ -46,27 +54,16 @@ $form-select-padding-y:             $input-padding-y;
 
 $input-btn-focus-blur:              $input-focus-blur;
 $input-btn-focus-width:             $input-focus-width;
+$input-btn-padding-x:               1.25rem;
 $input-btn-padding-y:               $input-padding-y;
 $input-btn-focus-color:             rgba($component-active-bg-secondary, $input-focus-color-opacity);
 $input-btn-focus-box-shadow:        0 0 $input-btn-focus-blur $input-btn-focus-width $input-btn-focus-color !important;
 
+$accordion-padding-x:               0;
+$accordion-border-width:            0;
+$accordion-border-radius:           0;
+$accordion-button-bg:               $white;
+$accordion-button-active-bg:        $white;
 
-
-// Tabs
-$nav-link-padding-y:                0;
-$nav-link-padding-x:                0;
-// $nav-link-font-size:                null;
-// $nav-link-font-weight:              null;
-// $nav-link-color:                    $link-color;
-// $nav-link-hover-color:              $link-hover-color;
-// $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-// $nav-link-disabled-color:           $gray-600;
-
-// $nav-tabs-border-color:             $gray-300;
-$nav-tabs-border-width:             0;
-// $nav-tabs-border-radius:            $border-radius;
-// $nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color;
-// $nav-tabs-link-active-color:        $gray-700;
-// $nav-tabs-link-active-bg:           $body-bg;
-// $nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg;
+$table-hover-bg:                    $light-blue;
 

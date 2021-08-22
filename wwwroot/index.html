@@ -11,11 +11,6 @@
 
 <body>
 
-    <!-- <svg>
-        <use href="images/icons.svg#awr-info-icon" />               
-    </svg> -->
-
-
     <div class="container awr-demo-page">
         <header>
             <h1>Add new project</h1>
@@ -40,10 +35,14 @@
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs flex-column col-4" id="addProject" role="tablist" aria-orientation="vertical">
                         <li class="nav-item">
-                            <a class="nav-link active" id="project-details-tab" data-toggle="tab" href="#project-details" role="tab"
-                                aria-controls="project-details" aria-selected="true">
+                            <a class="nav-link completed" id="project-details-tab" data-toggle="tab" href="#project-details" role="tab"
+                                aria-controls="project-details" aria-selected="false">
                                 <div class="awr-wizard-step d-flex">
-                                    <div class="awr-step-number">1</div>
+                                    <div class="awr-step-number">
+                                        <svg>
+                                            <use href="images/icons.svg#awr-completed-icon" />               
+                                        </svg>
+                                    </div>
                                     <div class="awr-step-line first"></div>
                                     <div class="awr-step-meta">
                                         <div class="awr-step-title">Project Details</div>
@@ -54,13 +53,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link completed" id="keywords-tab" data-toggle="tab" href="#keywords" role="tab"
-                                aria-controls="keywords" aria-selected="false">
+                            <a class="nav-link active" id="keywords-tab" data-toggle="tab" href="#keywords" role="tab"
+                                aria-controls="keywords" aria-selected="true">
                                 <div class="awr-wizard-step d-flex">
                                     <div class="awr-step-number">
-                                        <svg>
-                                            <use href="images/icons.svg#awr-completed-icon" />               
-                                        </svg>
+                                        2
                                     </div>                                
                                     <div class="awr-step-line"></div>
                                     <div class="awr-step-meta">
@@ -116,7 +113,7 @@
 
                     <!-- Tab panes -->
                     <div class="tab-content col-8">
-                        <div class="tab-pane fade show active" id="project-details" role="tabpanel" aria-labelledby="project-details-tab">
+                        <div class="tab-pane fade" id="project-details" role="tabpanel" aria-labelledby="project-details-tab">
                             <div class="row">
                                 <div class="col-12">
                                     <label for="projectName" class="form-label">Project name</label>
@@ -197,11 +194,11 @@
                                     </div>                                    
                                 </div>
 
-                                <div class="col-12 awr-wizard-actions">
+                                <div class="col-12 awr-wizard-actions d-flex justify-content-end">
                                     <button type="button" class="btn btn-primary float-end">
                                         Keywords
                                         <svg>
-                                            <use href="images/icons.svg#awr-next-icon" />               
+                                            <use href="images/icons.svg#awr-arrow-icon" />               
                                         </svg>
                                     </button>
                                 </div>
@@ -210,7 +207,119 @@
                         
                         </div>
 
-                        <div class="tab-pane fade" id="keywords" role="tabpanel" aria-labelledby="keywords-tab">keywords</div>
+                        <div class="tab-pane fade show active" id="keywords" role="tabpanel" aria-labelledby="keywords-tab">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="keywordsList" class="form-label mb-0">
+                                        List of keywords you want to track
+                                        <a href="#">Import</a>
+                                    </label>
+                                    <span class="text-muted">
+                                        * One per row
+                                    </span>
+                                    <textarea class="form-control mt-3" id="keywordsList" rows="3"></textarea>
+                                </div>
+
+                                <div class="accordion awr-accordion" id="additionalOptions">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="additionalOptionsHeader">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          Show additional options
+                                        </button>
+                                      </h2>
+
+                                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="additionalOptionsHeader" data-bs-parent="#additionalOptions">
+                                        <div class="accordion-body">
+                                            <div class="col-12 awr-input-chips">
+                                                <label for="URLKeyword" class="form-label">
+                                                    URL/Keyword
+                                                    <svg>
+                                                        <use href="images/icons.svg#awr-info-icon" />               
+                                                    </svg>
+                                                </label>
+                                                <input type="text" class="form-control" id="URLKeyword" placeholder="">
+                                                <span class="badge bg-primary">
+                                                    tennis
+                                                    <a href="#">x</a>
+                                                </span>
+                                            </div>
+
+                                            <table class="table table-hover">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </th>
+                                                    <th scope="col" class="d-flex align-items-center">
+                                                        <span>Keywords</span>
+                                                        <input type="text" class="form-control awr-table-input" id="URLKeywordFilter" placeholder="Filter Keywords">
+                                                    </th>
+                                                    <th scope="col">Volume</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th scope="row">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </th>
+                                                    <td>sport</td>
+                                                    <td>14k</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </th>
+                                                    <td>Australian open 2021</td>
+                                                    <td>1M</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </th>
+                                                    <td>Serena Williams</td>
+                                                    <td>14k</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">
+                                                        <input type="checkbox" class="form-check-input">
+                                                    </th>
+                                                    <td>nadal</td>
+                                                    <td>450k</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+
+                                              <button type="button" class="btn btn-primary awr-buy-btn">
+                                                Add suggestions to basket
+                                                <svg>
+                                                    <use href="images/icons.svg#awr-cart-icon" />               
+                                                </svg>
+                                            </button>
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 awr-wizard-actions d-flex justify-content-between">
+                                    <button type="button" class="btn btn-primary awr-previous-step-btn">
+                                        <svg>
+                                            <use href="images/icons.svg#awr-arrow-icon" />               
+                                        </svg>
+                                        Profile details
+                                    </button>
+
+                                    <button type="button" class="btn btn-primary">
+                                        Location & search engines
+                                        <svg>
+                                            <use href="images/icons.svg#awr-arrow-icon" />               
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div> 
+                        </div>
+
                         <div class="tab-pane fade" id="location-search-engines" role="tabpanel" aria-labelledby="location-search-engines-tab">location search engines tab</div>
                         <div class="tab-pane fade" id="competitors" role="tabpanel" aria-labelledby="competitors-tab">competitors</div>
                         <div class="tab-pane fade" id="completed" role="tabpanel" aria-labelledby="completed-tab">completed</div>

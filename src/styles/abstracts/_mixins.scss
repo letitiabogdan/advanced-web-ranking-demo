@@ -47,4 +47,12 @@
           transition: $property $duration $animation;
 }
 
+@mixin rotate ($degree) {
+  -webkit-transform:rotate($degree);
+     -moz-transform:rotate($degree);
+      -ms-transform:rotate($degree);
+      -o-transform:rotate($degree);
+        transform:rotate($degree);
+}
+
 
