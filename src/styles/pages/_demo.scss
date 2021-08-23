@@ -23,15 +23,24 @@
         .awr-tabs-container {
             .nav-item .nav-link {                
                 &.active {
-                    .awr-step-number { 
+                    .awr-step-number {
+                        font-size: 1.5rem;
                         color: $white;
                         background-color: $main-blue;
                     }
                 }
 
                 &.completed {
-                    .awr-step-number svg { 
-                        @include svg-icon(24px, 24px, $main-blue);
+                    .awr-step-number {
+                        font-size: 0;
+                        line-height: 0;
+                        display: flex;
+                    
+                        svg { 
+                            display: block !important;
+                            margin: auto;
+                            @include svg-icon(24px, 24px, $main-blue);
+                        }
                     }
 
                     .awr-step-title {

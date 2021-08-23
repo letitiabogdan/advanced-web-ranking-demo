@@ -39,9 +39,9 @@
                                 aria-controls="project-details" aria-selected="true">
                                 <div class="awr-wizard-step d-flex">
                                     <div class="awr-step-number">1
-                                        <!-- <svg>
+                                        <svg class="d-none">
                                             <use href="images/icons.svg#awr-completed-icon" />               
-                                        </svg> -->
+                                        </svg>
                                     </div>
                                     <div class="awr-step-line first"></div>
                                     <div class="awr-step-meta">
@@ -53,11 +53,13 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link disabled" id="keywords-tab" data-toggle="tab" href="#keywords" role="tab"
-                                aria-controls="keywords" aria-selected="false" tabindex="-1" aria-disabled="true">
+                            <a class="nav-link" id="keywords-tab" data-toggle="tab" href="#keywords" role="tab"
+                                aria-controls="keywords" aria-selected="false">
                                 <div class="awr-wizard-step d-flex">
-                                    <div class="awr-step-number">
-                                        2
+                                    <div class="awr-step-number">2
+                                        <svg class="d-none">
+                                            <use href="images/icons.svg#awr-completed-icon" />               
+                                        </svg>
                                     </div>                                
                                     <div class="awr-step-line"></div>
                                     <div class="awr-step-meta">
@@ -72,7 +74,11 @@
                             <a class="nav-link" id="location-search-engines-tab" data-toggle="tab" href="#location-search-engines" role="tab"
                                 aria-controls="location-search-engines" aria-selected="false">                            
                                 <div class="awr-wizard-step d-flex">
-                                    <div class="awr-step-number">3</div>
+                                    <div class="awr-step-number">3
+                                        <svg class="d-none">
+                                            <use href="images/icons.svg#awr-completed-icon" />               
+                                        </svg>
+                                    </div>
                                     <div class="awr-step-line"></div>
                                     <div class="awr-step-meta">
                                         <div class="awr-step-title">Location and Search Engines</div>
@@ -86,7 +92,11 @@
                             <a class="nav-link" id="competitors-tab" data-toggle="tab" href="#competitors" role="tab"
                                 aria-controls="competitors" aria-selected="false">
                                 <div class="awr-wizard-step d-flex">
-                                    <div class="awr-step-number">4</div>
+                                    <div class="awr-step-number">4
+                                        <svg class="d-none">
+                                            <use href="images/icons.svg#awr-completed-icon" />               
+                                        </svg>
+                                    </div>
                                     <div class="awr-step-line"></div>
                                     <div class="awr-step-meta">
                                         <div class="awr-step-title">Competitors</div>
@@ -100,7 +110,11 @@
                             <a class="nav-link" id="completed-tab" data-toggle="tab" href="#completed" role="tab"
                                 aria-controls="completed" aria-selected="false">
                                 <div class="awr-wizard-step d-flex">
-                                    <div class="awr-step-number">5</div>
+                                    <div class="awr-step-number">5
+                                        <svg class="d-none">
+                                            <use href="images/icons.svg#awr-completed-icon" />               
+                                        </svg>
+                                    </div>
                                     <div class="awr-step-line last"></div>
                                     <div class="awr-step-meta">
                                         <div class="awr-step-title">Completed</div>
@@ -195,7 +209,7 @@
                                 </div>
 
                                 <div class="col-12 awr-wizard-actions d-flex justify-content-end">
-                                    <button type="button" class="btn btn-primary float-end">
+                                    <button type="button" class="btn btn-primary float-end awr-next-step-btn">
                                         Keywords
                                         <svg>
                                             <use href="images/icons.svg#awr-arrow-icon" />               
@@ -309,7 +323,7 @@
                                         Project details
                                     </button>
 
-                                    <button type="button" class="btn btn-primary">
+                                    <button type="button" class="btn btn-primary awr-next-step-btn">
                                         Location & search engines
                                         <svg>
                                             <use href="images/icons.svg#awr-arrow-icon" />               
@@ -506,28 +520,28 @@
                                             Add search engine
                                         </button>
 
-                                        <div class="col-12 awr-wizard-actions d-flex justify-content-between mt-4">
-                                            <button type="button" class="btn btn-primary awr-previous-step-btn">
-                                                <svg>
-                                                    <use href="images/icons.svg#awr-arrow-icon" />               
-                                                </svg>
-                                                Keywords
-                                            </button>
-        
-                                            <button type="button" class="btn btn-primary">
-                                                Competitors
-                                                <svg>
-                                                    <use href="images/icons.svg#awr-arrow-icon" />               
-                                                </svg>
-                                            </button>
-                                        </div>
-
                                     </div>
 
                                     <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
                                         Mobile content tab
                                     </div>
                                   </div>
+                            </div>
+
+                            <div class="col-12 awr-wizard-actions d-flex justify-content-between mt-4">
+                                <button type="button" class="btn btn-primary awr-previous-step-btn">
+                                    <svg>
+                                        <use href="images/icons.svg#awr-arrow-icon" />               
+                                    </svg>
+                                    Keywords
+                                </button>
+
+                                <button type="button" class="btn btn-primary awr-next-step-btn">
+                                    Competitors
+                                    <svg>
+                                        <use href="images/icons.svg#awr-arrow-icon" />               
+                                    </svg>
+                                </button>
                             </div>
                             
                         </div>
@@ -633,7 +647,7 @@
                                         Location & search engines
                                     </button>
                             
-                                    <button type="button" class="btn btn-primary">
+                                    <button type="button" class="btn btn-primary awr-next-step-btn">
                                         Completed
                                         <svg>
                                             <use href="images/icons.svg#awr-arrow-icon" />               

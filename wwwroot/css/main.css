@@ -11811,10 +11811,18 @@ form .form-check-input:checked {
   margin-bottom: 0;
 }
 .awr-demo-page main .awr-tabs-container .nav-item .nav-link.active .awr-step-number {
+  font-size: 1.5rem;
   color: #ffffff;
   background-color: #009EF7;
 }
+.awr-demo-page main .awr-tabs-container .nav-item .nav-link.completed .awr-step-number {
+  font-size: 0;
+  line-height: 0;
+  display: flex;
+}
 .awr-demo-page main .awr-tabs-container .nav-item .nav-link.completed .awr-step-number svg {
+  display: block !important;
+  margin: auto;
   width: 24px;
   height: 24px;
   fill: #009EF7;
