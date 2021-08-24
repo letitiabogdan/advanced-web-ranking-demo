@@ -11930,7 +11930,7 @@ form .form-check-input:checked {
   fill: #009EF7;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .awr-demo-page main .awr-accordion .accordion-button {
     width: 100%;
   }
